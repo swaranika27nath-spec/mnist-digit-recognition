@@ -11,7 +11,7 @@ X_train = X_train[..., None]
 X_test = X_test[..., None]
 
 model = models.Sequential([
-    layers.Conv2D(32, 3, activation='relu', input_shape=(28,28,1)),
+   layers.Conv2D(32, 3, activation='relu', input_shape=(28,28,1)),
     layers.MaxPooling2D(),
     layers.Flatten(),
     layers.Dense(64, activation='relu'),
